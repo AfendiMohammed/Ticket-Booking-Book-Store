@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+select, input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  outline: none;
+}
+
+button {
+  background: #0072ff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 15px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #005ace;
+}
+
+/* Seats */
+.seat-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  justify-items: center;
+  margin: 20px 0;
+}
+
+.seat {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  background: #ccc;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.seat.selected {
+  background: #0072ff;
+}
+
+.seat.occupied {
+  background: #444;
+  cursor: not-allowed;
+}
+
+#seatInfo {
+  font-weight: 500;
+  color: #333;
+}
+
+/* Summary */
+#summary {
+  margin-top: 20px;
+  text-align: left;
+  background: #f7f7f7;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ✅ Book Store Section */
+.store-section {
+  margin-top: 30px;
+  background: #f2f7ff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.book-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.book {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.book h3 {
+  margin: 0;
+}
+
+.book p {
+  color: #444;
+  margin: 5px 0;
+}
+
+/* Purchased books */
+.purchased-books {
+  margin-top: 20px;
+  background: #eef4ff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.purchased-books ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.purchased-books li {
+  background: #fff;
+  margin-bottom: 8px;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}

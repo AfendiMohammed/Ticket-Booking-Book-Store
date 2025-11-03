@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ticket Booking & Book Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎫 Ticket Booking & 📚 Book Store</h1>
+
+    <!-- ✅ Ticket Booking Section -->
+    <div class="form-section">
+      <label for="event">Select Event:</label>
+      <select id="event">
+        <option value="">-- Choose Event --</option>
+        <option value="Concert" data-price="500">Concert - ETB500</option>
+        <option value="Movie" data-price="200">Movie - ETB200</option>
+        <option value="Theatre" data-price="350">Theatre - ETB350</option>
+      </select>
+    </div>
+
+    <div class="seat-section">
+      <h2>Select Seats</h2>
+      <div class="seat-container" id="seatContainer"></div>
+      <p id="seatInfo">Selected Seats: <span id="count">0</span> | Total: ETB<span id="total">0</span></p>
+    </div>
+
+    <div class="user-info">
+      <h2>Enter Your Details</h2>
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <button id="bookBtn">Book Now</button>
+    </div>
+
+    <div id="summary" class="hidden">
+      <h2>Booking Summary</h2>
+      <p><strong>Name:</strong> <span id="summaryName"></span></p>
+      <p><strong>Email:</strong> <span id="summaryEmail"></span></p>
+      <p><strong>Event:</strong> <span id="summaryEvent"></span></p>
+      <p><strong>Seats:</strong> <span id="summarySeats"></span></p>
+      <p><strong>Total Price:</strong> ETB<span id="summaryTotal"></span></p>
+    </div>
+
+    <!-- ✅ Book Store Section -->
+    <div class="store-section">
+      <h2>📚 Book Store</h2>
+      <div class="book-list">
+        <div class="book">
+         <img src="c:\Users\AfeDesigner\OneDrive\Desktop\new project\images\photo_3_2025-10-11_17-45-37.jpg">
+          <h3>Atomic Habits</h3>
+          <p>Price: ETB350</p>
+          <button class="buyBtn" data-title="Atomic Habits" data-price="350">Buy Now</button>
+        </div>
+        <div class="book">
+            <img src="c:\Users\AfeDesigner\OneDrive\Desktop\new project\images\photo_1_2025-10-11_17-45-37.jpg" height="200" width="100">
+          <h3>SIF GALEERAA</h3>
+          <p>Price: ETB280</p>
+          <button class="buyBtn" data-title="Miltoo jaalala" data-price="280">Buy Now</button>
+        </div>
+        <div class="book">
+               <img src="c:\Users\AfeDesigner\OneDrive\Desktop\new project\images\photo_2_2025-10-11_17-45-37.jpg" height="200" width="100">
+          <h3>Akka Abdi hin kutane Abdi kuttadhu</h3>
+          <p>Price: ETB300</p>
+          <button class="buyBtn" data-title="Akka Abdi hin kutane Abdi kuttadhu" data-price="300">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- ✅ Purchased Books Section -->
+      <div class="purchased-books">
+        <h3>🛍 Purchased Books</h3>
+        <ul id="purchasedList"></ul>
+        <button id="clearBooks">🗑 Clear Purchased Books</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
