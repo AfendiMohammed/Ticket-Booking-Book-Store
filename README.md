@@ -22,6 +22,6 @@ Technologies Used
  How to Use
 1. Download or clone this repository:
    `bash
-   git clone https://github.com/your-username/ticketing-system.git
+   git clone https://github.com/AfendiMohammed/ticketing-system.git
 ##Tags
 ticketing book system, html, css, javascript, localstorage, afendi mohammed, student web project
